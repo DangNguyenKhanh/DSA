@@ -1,5 +1,7 @@
 TÌM KIẾM TUẦN TỰ 
-
+- Time complexity = O(n)
+    
+    
 #include<iostream>
 using namespace std;
 
@@ -42,3 +44,4 @@ int main()
     int b[] = {1, 2, 3, 4, 5, 10, 12};
     cout << SequentialSearch(b, true, n, 10) << endl;
 }
+
