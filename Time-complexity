@@ -1,0 +1,54 @@
+CHƯƠNG TRÌNH 1:
+int s = 0;
+for(int i = 0; i < n; i++)
+  s = s + i;
+
+Gọi t là thời gian thực hiện dòng 4, với n lần lặp. Ta có thời gian thực hiện giải thuật
+  T(n) = n . t
+
+Trường hợp tốt nhất: O(1) sau 1 lần lặp
+Trường hợp xấu nhất: O(n) sau n lần lặp
+
+
+CHƯƠNG TRÌNH 2:
+int s = 0;
+int i = 1;
+while(i <= n)
+{
+  s = s + i;
+  i = i * 2;
+}
+
+Gọi t là thời gian thực dòng 15, 16, với k lần lặp trong đó n = 2^k => k = log2|n. Ta có thời gian thực hiện giải thuật
+  T(n) = log2|n . t
+
+Trường hợp tốt nhất: O(1) sau 1 lần lặp
+Trường hợp xấu nhất: O(log2|n) sau log2|n lần lặp
+
+
+CHƯƠNG TRÌNH 3:
+int s = 0;
+for(int i = 0; i < n; i++)
+  for(int j = 0; j < n; j++)
+    s = s + a[i][j];
+
+Gọi t là thời gian thực hiện dòng 33, với n lần lặp bên trong và n lần lặp cho bên ngoài. Ta có thời gian thực hiện giải thuật
+  T(n) = n^2 . t
+
+Trường hợp tốt nhất: O(1) sau 1 x 1 lần lặp
+Trường hợp xấu nhất: O(n^2) sau n x n lần lặp
+
+
+CHƯƠNG TRÌNH 4:
+int s = 0;
+for(int i = 0; i < n; i++)
+  for(int j = 0; j <= i; j++)
+    s = s + a[i][j];
+
+Gọi t là thời gian thực hiện dòng 46, với số lần lặp theo quy nạp sau: 1 + 2 + 3 + ... + n = n(n + 1) / 2 
+  T(n) = [n(n + 1) / 2] . t
+  
+Trường hợp tốt nhất: O(1) sau 1 x 1 lần lặp
+Trường hợp xấu nhất: O(n^2) sau [n(n + 1) / 2] lần lặp
+
+
