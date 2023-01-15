@@ -5,7 +5,6 @@ using namespace std;
 // 0 1 2 3 4 5: index
 unsigned long long Fibonacci(int index)
 {
-    
     if(index == 0 || index == 1) return 1;
     return Fibonacci(index - 1) + Fibonacci(index - 2);
 }
