@@ -9,7 +9,7 @@ public:
 	Node<T>* Next;
 	Node<T>* Prev;
 public:
-	Node(T Data);
+	Node(T);
 	void Display();
 };
 
@@ -346,5 +346,4 @@ DoubleLinkedList<T>::~DoubleLinkedList()
 {
 	this->Clear();
 }
-
 
