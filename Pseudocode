@@ -1,0 +1,18 @@
+Một số từ khóa mô tả mã giả:
+- Nhập xuất:
+  + input x
+  + output x
+  
+- Cấu trúc điều kiện
+  + if x != 0
+  + else 
+  
+- Cấu trúc lặp
+  + while x != 0
+  
+- Cấu trúc toán học
+  + add x to sum
+
+
+LƯU Ý: không dùng {}
+
