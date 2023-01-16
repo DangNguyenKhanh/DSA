@@ -12,19 +12,6 @@ public:
 };
 
 template<class T>
-Node<T>::Node(T Data)
-{
-	this->Info = Data;
-	this->Next = NULL;
-}
-
-template<class T>
-void Node<T>::Display()
-{
-	cout << Info << endl;
-}
-
-template<class T>
 class Queue {
 private:
 	Node<T>* Front;
@@ -40,6 +27,19 @@ public:
 	void Clear();
 	~Queue();
 };
+
+template<class T>
+Node<T>::Node(T Data)
+{
+	this->Info = Data;
+	this->Next = NULL;
+}
+
+template<class T>
+void Node<T>::Display()
+{
+	cout << Info << endl;
+}
 
 template<class T>
 Queue<T>::Queue()
