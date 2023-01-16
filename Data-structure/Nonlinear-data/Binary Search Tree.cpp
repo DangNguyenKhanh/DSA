@@ -46,7 +46,7 @@ class BST
         bool IsBST();
         void Clear();
         ~BST();
-    protected:
+    private:
         void Insert_Recursive(Node<T>*&, T);
         void TraverseNLR_Recursive(Node<T>*);
         Node<T>* Find_Recursive(Node<T>*, T);
