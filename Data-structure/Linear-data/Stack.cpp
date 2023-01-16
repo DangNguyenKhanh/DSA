@@ -12,19 +12,6 @@ public:
 };
 
 template<class T>
-Node<T>::Node(T Data)
-{
-	this->Info = Data;
-	this->Next = NULL;
-}
-
-template<class T>
-void Node<T>::Display()
-{
-	cout << this->Info << endl;
-}
-
-template<class T>
 class Stack {
 private:
 	Node<T>* Sp;
@@ -39,6 +26,19 @@ public:
 	void Clear();
 	~Stack();
 };
+
+template<class T>
+Node<T>::Node(T Data)
+{
+	this->Info = Data;
+	this->Next = NULL;
+}
+
+template<class T>
+void Node<T>::Display()
+{
+	cout << this->Info << endl;
+}
 
 template<class T>
 Stack<T>::Stack()
