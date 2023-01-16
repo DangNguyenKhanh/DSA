@@ -111,3 +111,5 @@ private:
 		}
 	};
 };
+
+template<class T>
