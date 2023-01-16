@@ -16,6 +16,21 @@ class Node
 };
 
 template<class T>
+Node<T>::Node(T theKey)
+{
+    Key = theKey;
+    Count = 1;
+    Left = NULL;
+    Right = NULL;
+}
+
+template<class T>
+void Node<T>::Display()
+{
+    cout << Key << " ";
+}
+
+template<class T>
 class BST
 {
     private:
@@ -40,21 +55,6 @@ class BST
         bool IsBST_Recursive(Node<T>*, T&, bool&);
         void ClearLRN(Node<T>*&);
 };
-
-template<class T>
-Node<T>::Node(T theKey)
-{
-    Key = theKey;
-    Count = 1;
-    Left = NULL;
-    Right = NULL;
-}
-
-template<class T>
-void Node<T>::Display()
-{
-    cout << Key << " ";
-}
 
 template<class T>
 BST<T>::BST()
